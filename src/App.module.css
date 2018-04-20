@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: min-content 1fr 2fr min-content;
+  grid-gap: 0.5em;
+  align-items: center;
+}
+
+.icon {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.fileName {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.statusLabel {
+  white-space: nowrap;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+}
+
+:global(.ui.header).noMargin {
+  margin: 0;
+}
